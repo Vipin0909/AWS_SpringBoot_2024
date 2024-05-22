@@ -1,6 +1,4 @@
-import org.hibernate.boot.model.source.internal.hbm.CompositeIdentifierSingularAttributeSourceManyToOneImpl;
-
-public class TestClassfrom_CLONE {
+public class newBranch {
     public static void main(String[] args) {
         System.out.println("hey this commit from AWS clone");
         System.out.println("Second update");
