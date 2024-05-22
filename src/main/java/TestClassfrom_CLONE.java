@@ -9,4 +9,9 @@ public class TestClassfrom_CLONE {
 public void addnewBranch(){
     System.out.println(" this is new branch");
 }
+
+    public void American_Team(){
+        System.out.println(" update by clone Team");
+    }
 }
+
