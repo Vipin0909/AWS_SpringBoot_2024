@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface employeeRepository extends JpaRepository<SQLDBemployeeBean, Integer > {
-    void Password();
+
 }
 
 

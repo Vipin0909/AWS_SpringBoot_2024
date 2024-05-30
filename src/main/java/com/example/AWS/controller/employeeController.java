@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
+//Test CI
 
 import static org.springframework.http.HttpStatus.CREATED;
 
@@ -23,7 +24,8 @@ public class employeeController  {
 
     SQLDBemployeeBean test = new SQLDBemployeeBean();
 
-    @GetMapping("services/getemployee/{empid}")
+    //@GetMapping("services/getemployee/{empid}")
+    @GetMapping("/{empid}")
     public ResponseEntity<SQLDBemployeeBean> getemp(@PathVariable(value = "empid") int empid) {
         try {
 
@@ -49,7 +51,6 @@ public class employeeController  {
         addResponse response = new addResponse();
         response.setMsg("Employee saved to database");
         response.setId(employeesSQL.getEmpid());
-
 
         return new ResponseEntity<addResponse>(response, CREATED);
 //        return actualjson ;
